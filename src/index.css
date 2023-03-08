@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  font-size: 18px;
+}
+
+/* Style for navbar */
+
+.nav {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.nav h1 {
+  padding-left: 15px;
+}
+
+
+/* style for issues container */
+
+.issues-container {
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  font-size: 1rem;
+}
+
+.issues-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  border-radius: 10px;
+}
+
+.issues-list {
+  padding: 10px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.issues-container ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.issues-container li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.issues-container li a:hover {
+  color: dodgerblue;
+}
+
+.issue-title {
+  font-weight: 500;
+}
+
+.icon {
+  padding-right: 8px;
+  color: green;
+}
+
+p {
+  /* padding: 10px; */
+  padding-left: 30px;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* syles for pagination button */
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.btn-container button {
+  color: dodgerblue;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  /* margin: 30px 30px; */
+  border-radius: 10px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  background-color: transparent;
+}
+
+.btn-container span button {
+  color: gray;
+}
+
+
+.btn-container button:hover {
+  border: 1px solid grey;
+}
+
+.btn-container button:active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn-container button:disabled {
+  color: gray;
+  cursor: not-allowed;
+  background-color: white;
+}
+
+/* LOADER */
+.app-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-top-color: #6200ee;
+  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  margin-right: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
